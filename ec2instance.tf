@@ -6,6 +6,6 @@ resource "aws_instance" "demo-ec2" {
   key_name               = "your-key"
   associate_public_ip_address = true # if launching public instance
   tags = {
-    Name = "demoec2"
+    "Name" = "var.name_tag"
   }
 }
