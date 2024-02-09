@@ -6,6 +6,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = ["your-security-group-id"] # Security Group ID within your existing VPC
 
   tags = {
-    Name = "ExampleInstance-${count.index + 1}"
+    Name = "var.name_tag"
+    Dynamiclable = "ExampleInstance-${count.index + 1}"
   }
 }
