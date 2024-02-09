@@ -13,7 +13,7 @@ terraform {
 //provider "AWS"
 provider "aws" {
   region  = "us-east-1"
-  profile  = "test"
+  profile  = "test" #either use export awsprofile & use while running terraform command.or it is configured use as it is 
 }
 
 //Using s3 bucket as remote state management.If needed or comment
