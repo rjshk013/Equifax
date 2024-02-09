@@ -7,6 +7,6 @@ resource "aws_instance" "example" {
 
   tags = {
     "Name" = "var.name_tag" #we have to define static tag variable name.It will be common name for all instances
-    "DynamicLabel" = "ExampleInstance${count.index + 1}Label"  # Dynamic label for each instance with count
+    "DynamicLabel" = "ExampleInstance-${count.index + 1}Label"  # Dynamic label for each instance with count
   }
 }
