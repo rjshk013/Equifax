@@ -14,3 +14,6 @@ variable "key_name" {
   description = "Public key path"
   default     = "testebs"
 }
+variable "instance_count" {
+  default = 2  # Change this value to the number of instances you want to create
+}
